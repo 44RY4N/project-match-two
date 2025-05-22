@@ -128,9 +128,9 @@ item.addEventListener("click", (e) => {
       secondPick = null;
       lockBoard = false; // ok good one u found it 
 
-      if (leftToReveal === 0) {
+      if (leftToReveal === 0) setTimeout(()=>{
       alert("YOU WON!...");     //win condition
-      }
+      },3000)
 
 
     } else {
