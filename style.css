@@ -1,0 +1,187 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    word-spacing: 2em;
+    margin-top: 4rem;
+
+}
+
+h1.hidden{
+    display: none;
+}
+
+h1>.one{
+    position:relative;
+        animation: bounce 4s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+
+}
+
+h1>.two{
+    position:relative;
+   animation: bounce 4s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+       animation-delay:2s;
+}
+
+@keyframes bounce{
+0%{top:0px;}
+25%{top:-30px;}
+50%{top: 0px;}
+
+}
+
+
+.pre-game{
+    border-radius: 10%;
+    height: 16rem;
+    width: 20vw;
+    top: 240px;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    border:2px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(198, 198, 198);
+}
+
+.pre-game.hidden{
+    display: none;
+}
+
+
+
+
+.pre-game>div{
+    text-align: center;
+    background-color: white;
+    padding: 10%;
+    border-radius: 40%;
+    border: 4px blue;
+    border-top-style: groove;
+    border-right-style: inset;
+    border-bottom-style:inset;
+    border-left-style: ridge;
+    font-weight: bolder;
+    text-shadow: 10px 10px 10px black;
+    animation: rgb 38s linear infinite;
+}
+
+.pre-game>div:hover{
+    animation-duration: 0.4s;
+    cursor:crosshair;
+}
+
+
+@keyframes rgb {
+
+0%{background-color: white;}
+10%{background-color: rgb(255, 95, 95);}
+20%{background-color: rgb(255, 0, 0);}
+30%{background-color: rgb(255, 238, 0);}
+40%{background-color: rgb(17, 255, 0);}
+50%{background-color: rgb(0, 255, 187);}
+60%{background-color: rgb(0, 81, 255);}
+70%{background-color: rgb(123, 0, 255);}
+80%{background-color: rgb(255, 0, 200);}
+90%{background-color: rgb(255, 0, 34);}
+100%{background-color: rgb(255, 255, 255);}
+
+}
+
+
+
+
+
+.pre-game>select{
+
+
+}
+
+
+.ITEM.REVEAL .CARD {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+.play{
+    width: 15vw;
+    height: 35px;
+    border:5px solid lime;
+    border-radius: 30px;
+    border-style:double;
+    border-bottom-color: purple;
+    border-right-color: purple;
+    background-color: black;
+    color: lime;
+    transition: all 0.4s ease-in-out;
+    font-weight: bolder;
+    box-shadow: 3px 4px 10px white;
+}
+
+.play:hover{
+    border:5px solid purple;
+    border-style:double;
+    border-bottom-color: lime;
+    border-right-color:lime;
+    background-color: white;
+    color: purple;
+    cursor:pointer;
+}
+
+
+
+select{
+    text-align: center;
+    background-color:rgb(198, 198, 198); 
+}
+
+select:focus{
+    background-color: white;
+}
+
+
+h1>div{
+    position: fixed;
+    font-size: 900px;
+   margin-left: -600px;
+    opacity: 0.2;
+}
+
+
+
+select {
+  width: 12vw;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  color: #222;
+  appearance: none;       /* remove native styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,.5);
+}
