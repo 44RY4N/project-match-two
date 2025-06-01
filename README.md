@@ -47,12 +47,12 @@ A sleek and interactive memory game where users flip cards to match pairs. Built
 
 ## 📦 Project Structure
 
-project-match-two/
-├── index.html
-├── style.css
-├── script.js
-├── logo/
-└── README.md
+project-match-two/                                                                  
+├── index.html                                                                      
+├── style.css                                                                  
+├── script.js                                                                      
+├── logo/                                                                            
+└── README.md                                                                              
 
 
 ---
